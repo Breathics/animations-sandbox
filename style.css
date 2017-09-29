@@ -1,0 +1,18 @@
+.duck {
+  background-image: url('assets/duck1-animation.png');
+  background-repeat: no-repeat; 
+  height: 150px;
+  width: 200px;
+  /* Using the animation rule allows you to 
+  set a keyframes rule to animate over that
+  much time */
+  animation: play 1s steps(4) infinite;
+  
+}
+
+
+/* Higher negative value is a greater distance to travel */
+@keyframes play {
+  from { background-position: 0; }
+  to { background-position: -825px; } 
+}
