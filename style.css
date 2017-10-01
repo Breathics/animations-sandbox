@@ -1,18 +1,52 @@
-.duck {
+.duck1 {
   background-image: url('assets/duck1-animation.png');
-  background-repeat: no-repeat; 
+  background-size: cover; 
   height: 150px;
   width: 200px;
   /* Using the animation rule allows you to 
   set a keyframes rule to animate over that
   much time */
-  animation: play 1s steps(4) infinite;
+  animation: play1 1s steps(4) infinite;
+  
+}
+
+.duck2 {
+  background-image: url('assets/duck1-animation.png');
+  background-size: cover; 
+  height: 120px;
+  width: 150px;
+  /* Using the animation rule allows you to 
+  set a keyframes rule to animate over that
+  much time */
+  animation: play2 1s steps(4) infinite;
+  
+}
+
+.duck3 {
+  background-image: url('assets/duck1-animation.png');
+  background-size: cover; 
+  height: 100px;
+  width: 120px;
+  /* Using the animation rule allows you to 
+  set a keyframes rule to animate over that
+  much time */
+  animation: play3 1s steps(4) infinite;
   
 }
 
 
 /* Higher negative value is a greater distance to travel */
-@keyframes play {
+@keyframes play1 {
   from { background-position: 0; }
   to { background-position: -825px; } 
+}
+
+@keyframes play2 {
+  from { background-position: -10px; }
+  to { background-position: -700px; } 
+}
+
+@keyframes play3 {
+  from { background-position: 0; }
+  to { background-position: -590px; } 
 }
